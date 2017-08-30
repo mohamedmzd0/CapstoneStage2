@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/backgroundWhite"
+    tools:context="com.example.mohamedabdelaziz.marketstore.Details">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:transitionName="mytest"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/things_photos"
+                android:minHeight="?actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/desc"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:contentDescription="@string/desc"
+                android:textSize="@dimen/text16sp"
+                android:layout_margin="@dimen/appbar_padding_top"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/price"
+                    android:paddingLeft="@dimen/appbar_padding_top"
+                    android:contentDescription="@string/price"
+                    android:paddingRight="@dimen/appbar_padding_top"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/red"
+                    android:textColor="@color/backgroundWhite"
+                    android:textSize="@dimen/text16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/appbar_padding_top"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:id="@+id/comments_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

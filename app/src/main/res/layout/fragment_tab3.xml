@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhite"
+    tools:context="com.example.mohamedabdelaziz.marketstore.TabActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:contentDescription="@string/profile_image"
+        android:background="@drawable/user"
+        android:layout_width="@dimen/h50dp"
+        android:layout_height="@dimen/h50dp" />
+    <TextView
+        android:layout_toEndOf="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50dp"
+        android:id="@+id/Profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16sp"
+        android:textStyle="bold"
+        android:text="@string/Profile"
+        android:padding="@dimen/appbar_padding_top"
+        android:layout_toRightOf="@+id/image" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view1dp"
+        android:layout_below="@+id/image"
+        android:background="@color/viewColor"/>
+
+
+
+
+
+    <ImageView
+        android:layout_below="@+id/image"
+        android:id="@+id/image2"
+        android:contentDescription="@string/add_post"
+        android:background="@drawable/post"
+        android:layout_width="@dimen/h50dp"
+        android:layout_height="@dimen/h50dp" />
+    <TextView
+        android:layout_toEndOf="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/image"
+        android:layout_height="@dimen/h50dp"
+        android:textAlignment="center"
+        android:id="@+id/Write_post"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16sp"
+        android:textStyle="bold"
+        android:text="@string/add_post"
+        android:padding="@dimen/appbar_padding_top"
+        android:layout_toRightOf="@+id/image" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view1dp"
+        android:layout_below="@+id/image2"
+        android:background="@color/viewColor"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_below="@+id/image2"
+        android:background="@drawable/logout"
+        android:contentDescription="@string/Logout"
+        android:layout_width="@dimen/h50dp"
+        android:layout_height="@dimen/h50dp" />
+    <TextView
+        android:layout_toEndOf="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50dp"
+        android:id="@+id/logout"
+        android:layout_below="@+id/image2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text16sp"
+        android:textStyle="bold"
+        android:text="@string/Logout"
+        android:padding="@dimen/appbar_padding_top"
+        android:layout_toRightOf="@+id/image" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view1dp"
+        android:layout_below="@+id/image3"
+        android:background="@color/viewColor"/>
+</RelativeLayout>

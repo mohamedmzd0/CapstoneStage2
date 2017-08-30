@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "17074779045",
+    "firebase_url": "https://marketstore-5cdb7.firebaseio.com",
+    "project_id": "marketstore-5cdb7",
+    "storage_bucket": "marketstore-5cdb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17074779045:android:dc5e151d5183ab52",
+        "android_client_info": {
+          "package_name": "com.example.mohamedabdelaziz.marketstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17074779045-ofk8ojiosmspho049usvrhjgurupm3kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTQ8qgGptzzzrn8TWk6uqqcu8aE6xxk8g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

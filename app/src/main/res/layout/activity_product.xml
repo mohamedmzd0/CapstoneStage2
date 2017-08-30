@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundWhite"
+    tools:context="com.example.mohamedabdelaziz.marketstore.ProductActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:horizontalSpacing="0dp"
+            android:columnWidth="@dimen/h100dp"
+            android:layout_margin="@dimen/appbar_padding_top"
+            android:verticalSpacing="@dimen/appbar_padding_top"
+            android:gravity="center_horizontal"
+            tools:listitem="@layout/recycleview_product_item"
+            android:layout_height="@dimen/appbar_padding_top">
+            </android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/viewColor"
+            android:layout_height="@dimen/view1dp"/>
+        <TextView
+            android:id="@+id/numb_char"
+            android:padding="5dp"
+            android:layout_margin="@dimen/appbar_padding_top"
+            android:textSize="@dimen/text16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/desc"
+            android:padding="@dimen/appbar_padding_top"
+            android:textSize="@dimen/text16sp"
+            android:layout_margin="@dimen/margn5dp"
+            android:textColor="@color/black"
+            android:maxLength="50"
+            android:background="@drawable/rounded_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h100dp" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/viewColor"
+            android:layout_margin="@dimen/margn5dp"
+            android:layout_height="@dimen/view1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="@dimen/h100dp">
+            <TextView
+                android:text="@string/price_in_dollar"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:layout_marginTop="@dimen/appbar_padding_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="number"
+                android:maxLines="1"
+                android:id="@+id/price"
+                android:padding="@dimen/margn5dp"
+                android:layout_marginTop="@dimen/appbar_padding_top"
+                android:background="@drawable/rounded_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h50dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/viewColor"
+            android:layout_margin="@dimen/appbar_padding_top"
+            android:layout_height="@dimen/view1dp"/>
+        <ImageView
+            android:background="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:contentDescription="@string/productimage"
+            android:id="@+id/gallaryImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

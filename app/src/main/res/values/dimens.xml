@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="viewH">1dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="h50dp">50dp</dimen>
+    <dimen name="text16sp">16sp</dimen>
+    <dimen name="margn5dp">5dp</dimen>
+    <dimen name="h100dp">100dp</dimen>
+    <dimen name="view1dp">1dp</dimen>
+    <dimen name="dim30dp">30dp</dimen>
+    <dimen name="dim28dp">28dp</dimen>
+    <dimen name="dim24">24dp</dimen>
+    <dimen name="pressz">10dp</dimen>
+    <dimen name="img320h">320dp</dimen>
+</resources>

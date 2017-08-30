@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohamedabdelaziz.marketstore">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashPage"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ApplicationIntro"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".TabActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".StoreServices"
+            android:enabled="true"
+            android:stopWithTask="true" />
+
+        <activity
+            android:name=".ProductActivity"
+            android:label="@string/title_activity_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".TabActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddCommnet"
+            android:label="comment"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+
+        <receiver android:name=".AppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
